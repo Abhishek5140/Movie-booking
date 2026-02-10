@@ -1,0 +1,178 @@
+.cinema-halls {
+  min-height: 100vh;
+  background: #f7fafc;
+}
+
+.page-header {
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-back {
+  padding: 8px 16px;
+  background: #edf2f7;
+  color: #2d3748;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-back:hover {
+  background: #e2e8f0;
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #1a202c;
+}
+
+.page-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+.movie-banner {
+  background: white;
+  border-radius: 12px;
+  padding: 32px;
+  margin-bottom: 32px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.movie-banner-content {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.banner-poster {
+  width: 150px;
+  height: 225px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.banner-info h2 {
+  margin: 0 0 12px 0;
+  font-size: 32px;
+  color: #1a202c;
+}
+
+.banner-meta {
+  display: flex;
+  gap: 12px;
+  color: #718096;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.halls-section h3 {
+  margin: 0 0 24px 0;
+  font-size: 24px;
+  color: #1a202c;
+}
+
+.no-halls {
+  text-align: center;
+  padding: 48px;
+  background: white;
+  border-radius: 12px;
+  color: #718096;
+}
+
+.halls-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.hall-card {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.hall-card:hover {
+  transform: translateX(8px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.hall-icon {
+  font-size: 48px;
+  flex-shrink: 0;
+}
+
+.hall-info {
+  flex: 1;
+}
+
+.hall-info h4 {
+  margin: 0 0 8px 0;
+  font-size: 20px;
+  color: #1a202c;
+}
+
+.hall-info p {
+  margin: 0;
+  color: #718096;
+  font-size: 14px;
+}
+
+.hall-city {
+  margin-top: 4px;
+  color: #3182ce;
+  font-weight: 500;
+}
+
+.hall-arrow {
+  font-size: 24px;
+  color: #a0aec0;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .movie-banner-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .banner-info h2 {
+    font-size: 24px;
+  }
+
+  .banner-meta {
+    justify-content: center;
+  }
+
+  .hall-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hall-arrow {
+    transform: rotate(90deg);
+  }
+}

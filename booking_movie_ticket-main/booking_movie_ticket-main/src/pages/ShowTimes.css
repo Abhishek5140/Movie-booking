@@ -1,0 +1,145 @@
+.show-times {
+  min-height: 100vh;
+  background: #f7fafc;
+}
+
+.booking-summary {
+  margin-bottom: 32px;
+}
+
+.summary-card {
+  background: white;
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.summary-poster {
+  width: 150px;
+  height: 225px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  flex-shrink: 0;
+}
+
+.summary-info {
+  flex: 1;
+}
+
+.summary-info h2 {
+  margin: 0 0 24px 0;
+  font-size: 28px;
+  color: #1a202c;
+}
+
+.summary-details {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.detail-item {
+  display: flex;
+  gap: 12px;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: #4a5568;
+  min-width: 80px;
+}
+
+.detail-value {
+  color: #2d3748;
+}
+
+.show-times-section {
+  background: white;
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.show-times-section h3 {
+  margin: 0 0 24px 0;
+  font-size: 24px;
+  color: #1a202c;
+}
+
+.times-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.time-slot {
+  padding: 16px;
+  background: #f7fafc;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2d3748;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.time-slot:hover {
+  background: #edf2f7;
+  border-color: #cbd5e0;
+}
+
+.time-slot.selected {
+  background: #3182ce;
+  border-color: #3182ce;
+  color: white;
+}
+
+.btn-book {
+  width: 100%;
+  padding: 16px;
+  background: #48bb78;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-book:hover:not(:disabled) {
+  background: #38a169;
+}
+
+.btn-book:disabled {
+  background: #a0aec0;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .summary-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .summary-poster {
+    margin: 0 auto;
+  }
+
+  .detail-item {
+    flex-direction: column;
+    gap: 4px;
+    text-align: left;
+  }
+
+  .times-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+}
